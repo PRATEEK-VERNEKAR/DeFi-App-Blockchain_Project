@@ -1,0 +1,89 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: #282c34;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.form {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.form h2 {
+  color: #282c34;
+}
+
+.form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loan-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  /* width: calc(25% - 40px);  */
+}
+
+.loan-card p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .loan-card {
+    width: calc(50% - 40px); /* 2 cards per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loan-card {
+    width: calc(100% - 40px); /* 1 card per row */
+  }
+}
